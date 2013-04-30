@@ -8,6 +8,7 @@
 #include <vector>
 using namespace std;
 
+
 struct RBTNode
 {
     int key;
@@ -248,7 +249,7 @@ bool RBT::blackHeight(RBTNode *p, int height)
     {
         if(cmp != -1 && cmp != height)return false;
         cmp = height;
-        //cout<<"黑高度是："<<height<<endl;
+        //cout<<"锟节高讹拷锟角ｏ拷"<<height<<endl;
         return true;
     }    /* to calculate its children black-height   */
     return blackHeight(p->left, height + (p->color == BLACK)) * blackHeight(p->right, height + (p->color == BLACK));
